@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONNO Construcción - Construimos tu sueño</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'onno-primary': '#FFC107', // A strong construction yellow/gold
+                        'onno-dark': '#212529',   // A dark, near-black for text and accents
+                        'onno-light': '#F8F9FA',  // A very light grey for backgrounds
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Basic smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Simple hero background - can be replaced with an image */
+        .hero-bg {
+            background-color: #343a40;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./banner.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-onno-dark">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold text-onno-dark tracking-tighter">
+                ONNO
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-onno-dark focus:outline-none focus:ring-2 focus:ring-onno-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#inicio" class="text-onno-dark hover:text-onno-primary transition duration-300">Inicio</a>
+                <a href="#nosotros" class="text-onno-dark hover:text-onno-primary transition duration-300">Sobre Nosotros</a>
+                <a href="#servicios" class="text-onno-dark hover:text-onno-primary transition duration-300">Servicios</a>
+                <a href="#proyectos" class="text-onno-dark hover:text-onno-primary transition duration-300">Proyectos</a>
+                <a href="#contacto" class="bg-onno-primary text-onno-dark font-semibold px-5 py-2 rounded-md hover:bg-yellow-400 transition duration-300">Contacto</a>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#inicio" class="block px-6 py-3 text-onno-dark hover:bg-onno-light">Inicio</a>
+            <a href="#nosotros" class="block px-6 py-3 text-onno-dark hover:bg-onno-light">Sobre Nosotros</a>
+            <a href="#servicios" class="block px-6 py-3 text-onno-dark hover:bg-onno-light">Servicios</a>
+            <a href="#proyectos" class="block px-6 py-3 text-onno-dark hover:bg-onno-light">Proyectos</a>
+            <a href="#contacto" class="block px-6 py-3 bg-onno-primary text-onno-dark font-semibold text-center">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-bg text-white h-[85vh] min-h-[600px] flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tighter">ONNO</h1>
+                <p class="text-2xl md:text-4xl font-light text-onno-primary mb-8">Construimos tu sueño</p>
+                <a href="#contacto" class="bg-onno-primary text-onno-dark text-lg font-semibold px-8 py-3 rounded-md hover:bg-yellow-400 transition duration-300">Solicitar Presupuesto</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="nosotros" class="py-20 md:py-32 bg-onno-light">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-onno-dark mb-6">Sobre Nosotros</h2>
+                    <span class="w-20 h-1 bg-onno-primary mx-auto block mb-6"></span>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        En ONNO, transformamos ideas en realidad. Somos una empresa constructora líder en Uruguay comprometida con la excelencia y la innovación en cada uno de sus proyectos. 
+Apostamos por la integración de la inteligencia artificial en todos nuestros procesos, lo que nos permite optimizar la planificación, la gestión de recursos y el control de calidad. Gracias a esta tecnología avanzada, podemos anticipar posibles incidencias, reducir tiempos y costos, y garantizar a nuestros clientes la máxima calidad en la ejecución de sus obras. 
+Nuestra misión es transformar el sector de la construcción, ofreciendo soluciones eficientes y personalizadas que superan las expectativas del mercado.
+
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Desde proyectos residenciales a medida hasta complejos comerciales de gran envergadura, nuestro equipo de profesionales aplica los más altos estándares de la industria para entregar resultados que perduran. Creemos que cada construcción es más que ladrillos y cemento; es el fundamento de futuros hogares y negocios prósperos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-onno-dark mb-6">Nuestros Servicios</h2>
+                    <span class="w-20 h-1 bg-onno-primary mx-auto block"></span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-onno-light p-8 rounded-lg shadow-lg text-center">
+                        <div class="flex justify-center mb-4">
+                             <svg class="w-12 h-12 text-onno-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6-4v4m0 0v4m0-4h4m-4 0H7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Construcción Residencial</h3>
+                        <p class="text-gray-600">Diseñamos y construimos la casa de sus sueños, con atención al detalle y acabados de primera calidad.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-onno-light p-8 rounded-lg shadow-lg text-center">
+                         <div class="flex justify-center mb-4">
+                            <svg class="w-12 h-12 text-onno-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H5m14 0V5M5 21V5m0 16H3m2 0v-2m14 2v-2m-2 0H7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Proyectos Comerciales</h3>
+                        <p class="text-gray-600">Desarrollamos oficinas, locales comerciales y edificios corporativos funcionales y modernos.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-onno-light p-8 rounded-lg shadow-lg text-center">
+                         <div class="flex justify-center mb-4">
+                            <svg class="w-12 h-12 text-onno-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Reciclajes y remodelaciones</h3>
+                        <p class="text-gray-600">Modernizamos y valorizamos su propiedad, adaptando espacios a sus nuevas necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 md:py-32 bg-onno-dark text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contáctenos</h2>
+                        <span class="w-20 h-1 bg-onno-primary mx-auto block mb-6"></span>
+                        <p class="text-lg text-gray-300">¿Listo para comenzar su próximo proyecto? Envíenos un mensaje.</p>
+                    </div>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-onno-primary" placeholder="Su nombre" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-onno-primary" placeholder="su@email.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-onno-primary" placeholder="Cuéntenos sobre su proyecto..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-onno-primary text-onno-dark text-lg font-semibold px-10 py-3 rounded-md hover:bg-yellow-400 transition duration-300">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                    
+                    <!-- Form submission message -->
+                    <div id="form-message" class="text-center mt-6 text-lg" style="display: none;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold text-white mb-2">ONNO</p>
+            <p class="mb-4">Construimos tu sueño</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="hover:text-white">Instagram</a>
+                <a href="#" class="hover:text-white">Facebook</a>
+                <a href="#" class="hover:text-white">LinkedIn</a>
+            </div>
+            <p class="text-sm">&copy; <span id="footer-year"></span> ONNO Construcción. Todos los derechos reservados.</p>
+            <p class="text-sm">Montevideo, Uruguay</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+
+        // Set Footer Year
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+        // Simple Contact Form Handler (for demo)
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Prevent multiple submissions
+            contactForm.querySelector('button').disabled = true;
+            contactForm.querySelector('button').textContent = 'Enviando...';
+
+            // Simulate form submission
+            setTimeout(() => {
+                formMessage.textContent = '¡Gracias por su mensaje! Nos pondremos en contacto a la brevedad.';
+                formMessage.style.display = 'block';
+                formMessage.style.color = '#4CAF50'; // Green success color
+                
+                contactForm.reset();
+                contactForm.style.display = 'none';
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
